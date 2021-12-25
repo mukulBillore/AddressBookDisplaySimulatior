@@ -18,10 +18,18 @@ public class AdddressBookDisplaty {
 		String email = sc.nextLine();
 		sc.nextLine();
 		int zip = sc.nextInt();
-		double number = sc.nextDouble();
+		long number = sc.nextLong();
 		
 
 		ContactDetailStore mukul = new ContactDetailStore(bookName, firstName, lastName, address, city, state, zip, number, email);
+		System.out.println(mukul);
+		System.out.println("Enter the 1 to edit your name and 2 to exit ");
+		int input = sc.nextInt();
+		if(input==1) {
+		      mukul.editWithName(firstName,lastName);
+		}else{
+			
+		}
 		System.out.println(mukul);
 	}
 
