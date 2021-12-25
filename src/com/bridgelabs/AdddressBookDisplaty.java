@@ -31,6 +31,16 @@ public class AdddressBookDisplaty {
 			
 		}
 		System.out.println(mukul);
+		
+		//to delete the person using name
+		String firstNameToCheck = sc.nextLine();
+		System.out.println("enter your last name for aurthorisation");
+		String lastNameToCheck = sc.nextLine();
+		System.out.println(firstName + firstNameToCheck + lastName + lastNameToCheck);
+		if (firstName.equals(firstNameToCheck) && lastName.equals(lastNameToCheck)) {
+			mukul=null;
+		}
+		
 	}
 
 }
